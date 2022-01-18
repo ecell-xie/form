@@ -17,9 +17,8 @@ body {
   color: #333;
   font-size: 13px;
   margin: 0;
-  background: #41295a;
-  background: -webkit-linear-gradient(to right, #2f0743, #41295a);
-  background: linear-gradient(to right, #2f0743, #41295a);
+  background-color: #0219a1;
+  background-image: linear-gradient(to bottom right, #0219a1, #02a7ed);
 }
 input::placeholder {
   color: #fff;
@@ -73,9 +72,7 @@ a:hover {
   align-items: center;
 }
 .bg-box {
-  background: #232526;
-  background: -webkit-linear-gradient(to right, #414345, #232526);
-  background: linear-gradient(to right, #414345, #232526);
+  background: #ffffff;
 }
 .inner {
   padding: 20px;
@@ -83,9 +80,9 @@ a:hover {
   max-width: 850px;
   margin: auto;
   display: flex;
-  background: #42275a;
-  background: -webkit-linear-gradient(to right, #734b6d, #42275a);
-  background: linear-gradient(to right, #734b6d, #42275a);
+  background: #6190e8;
+  background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
+  background: linear-gradient(to right, #c4d4f0, #003494);
 }
 .inner .image-holder {
   width: 50%;
@@ -136,22 +133,22 @@ a:hover {
 }
 .form-control::-webkit-input-placeholder {
   font-size: 13px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Poppins-Regular";
 }
 .form-control::-moz-placeholder {
   font-size: 13px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Poppins-Regular";
 }
 .form-control:-ms-input-placeholder {
   font-size: 13px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Poppins-Regular";
 }
 .form-control:-moz-placeholder {
   font-size: 13px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Poppins-Regular";
 }
 
@@ -186,9 +183,7 @@ button {
   transform: perspective(1px) translateZ(0);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: #fff;
 }
 button i {
   margin-left: 10px;
