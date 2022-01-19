@@ -4,6 +4,6 @@ const form = document.forms["google-sheet"];
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => alert("You have been registered. We will see you in the Webinar!"))
+    .then((response) => (window.location.href = "success.html"))
     .catch((error) => console.error("error", error.message));
 });
