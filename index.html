@@ -70,7 +70,7 @@
           <input class="form-control bg-box text-dark ps-2" type="text" name="Query" placeholder="Your Question" />
           <i class="zmdi zmdi-help pe-2 text-dark"></i>
         </div>
-        <button class="text-dark" type="submit" value="submit">Register
+        <button class="text-dark" type="submit" value="submit" id="submit-button" onclick="submitClicked();">Register
           <i class="zmdi zmdi-arrow-right"></i>
         </button>
       </form>
@@ -82,6 +82,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script>
+    function submitClicked() {
+      setTimeout(function () {
+        $("#submit-button").prop("disabled", true).val("Wait...");
+      }, 100);
+
+      setTimeout(function () {
+        $("#submit-button").prop("disabled", false).val("Try again?");
+      }, 10000);
+    }
+  </script>
   <script src="index.js"></script>
 </body>
 
