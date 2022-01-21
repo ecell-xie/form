@@ -7,3 +7,13 @@ form.addEventListener("submit", (e) => {
     .then((response) => (window.location.href = "success.html"))
     .catch((error) => console.error("error", error.message));
 });
+
+function submitClicked() {
+  setTimeout(function () {
+    $("#submit-button").prop("disabled", true).val("Wait...");
+  }, 100);
+
+  setTimeout(function () {
+    $("#submit-button").prop("disabled", false).val("Try again?");
+  }, 10000);
+}
