@@ -17,15 +17,14 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/nores.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/nores.css"> -->
 </head>
 
 <body>
 
   <!-- Not Accepting Response Page -->
-  <div>
+  <!-- <div>
 
     <main>
       <div>
@@ -198,7 +197,7 @@
 
 
   </div>
-
+ -->
 
 
 
@@ -259,6 +258,62 @@
 
     </div>
   </div> -->
+
+  <div class="container">
+
+    <div class="row my-bg my-3 p-0">
+      <div class="col-md-6 col-12 pb-5 pb-md-0 p-0 border-end border-warning">
+        <img class="img-fluid" src="./images/poster.png" alt="poster">
+      </div>
+      <div class="col-md-6 col-12 px-4 px-md-5 my-auto text-center">
+        <img class="ecell-logo" src="./images/fav.png" alt="E-Cell">
+        <h1 class="pb-3 pb-md-5 text-center">Registration Form</h1>
+        <form method="POST" name="google-sheet">
+          <div>
+            <input name="Full Name" type="text" placeholder="Full Name" class="form-control mb-4" required>
+
+          </div>
+          <div>
+            <input type="email" name="Email" placeholder="Email Address" class="form-control my-4" required>
+          </div>
+          <div>
+            <select name="Branch" class="form-control my-4">
+              <option value="None" disabled selected>Branch</option>
+              <option value="IT">Information Technology</option>
+              <option value="CS">Computer Engineering</option>
+              <option value="EXTC">ExTC</option>
+              <option value="Mech">Mechanical</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <div>
+            <select name="Year" class="form-control my-4">
+              <option value="None" disabled selected>Year</option>
+              <option value="FE">FE</option>
+              <option value="SE">SE</option>
+              <option value="TE">TE</option>
+              <option value="BE">BE</option>
+            </select>
+          </div>
+
+          <div>
+            <input name="College" type="text" placeholder="College" class="form-control my-4" required>
+          </div>
+          <div>
+            <input class="form-control bg-box text-dark ps-2" type="text" name="Query"
+              placeholder="Your Question (Optional)" />
+          </div>
+          <div class="py-3 py-md-5">
+
+            <button class="btn btn-lg bg-warning text-light" type="submit" value="submit" id="submit-button"
+              onclick="submitClicked();">Register
+          </div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
