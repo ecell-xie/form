@@ -17,16 +17,19 @@ body {
 }
 
 .my-bg {
-  background-color: #ffffff;
+  background-color: #0f1234;
 }
 
 .my_container {
-  max-width: 30%;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.imgsize {
+  height: 500px;
+  width: 500px;
 }
 @media screen and (max-width: 1024px) {
   .my_container {
@@ -36,5 +39,9 @@ body {
 @media screen and (max-width: 800px) {
   .my_container {
     max-width: 100%;
+  }
+  .imgsize {
+    height: 350px;
+    width: 350px;
   }
 }
